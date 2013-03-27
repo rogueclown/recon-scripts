@@ -91,12 +91,13 @@ for domain in domainlist:
 
 # perform discovery on all found domains and subdomains, once
 # database is built out
-scriptwrite("use recon/hosts/dns/resolve")
+scriptwrite("use recon/hosts/enum/dns/resolve")
 scriptwrite("run")
 scriptwrite("exit")
 scriptwrite("use discovery/info_disclosure/http/interesting_files")
 scriptwrite("run")
 scriptwrite("exit")
+scriptwrite("hosts")
 
 # close output file
 outputfile.close()
