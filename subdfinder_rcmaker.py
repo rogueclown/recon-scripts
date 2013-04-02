@@ -97,7 +97,7 @@ scriptwrite("exit")
 scriptwrite("use discovery/info_disclosure/http/interesting_files")
 scriptwrite("run")
 scriptwrite("exit")
-scriptwrite("hosts")
+scriptwrite("show hosts")
 
 # close output file
 outputfile.close()
