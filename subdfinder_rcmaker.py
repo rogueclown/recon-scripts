@@ -85,7 +85,8 @@ for domain in domainlist:
 	scriptwrite("exit")
 	for resource in ["baidu", "bing", "google", "ip_neighbor", "netcraft", "shodan", "yahoo"]:
 		scriptwrite("use recon/hosts/gather/http/" + resource)
-		scriptwrite("set domain " + domain)
+		if resourse != "ip_neighbor":
+			scriptwrite("set domain " + domain)
 		scriptwrite("run")
 		scriptwrite("exit")
 
